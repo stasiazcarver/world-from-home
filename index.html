@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World From Home</title>
+    <script src="js/jquery.js"></script>
+    <!--JAVASCRIPT FOR MAP-->
+    <script src="js/jquery-jvectormap.2.js"></script>
+    <!--JAVASCRIPT FOR MAP-->
+    <script src="js/jquery-jvectormap-world-mill.js"></script>
+    <!--JAVASCRIPT FOR MAP-->
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themap.css">
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap">
+</head>
+
+<body>
+    <header>
+        <!--NAV-->
+        <div class="hamburger"><span></span></div>
+        <nav class="nav">
+            <a class="cross">✕</a>
+            <a href="./pages/page-4.html">A-Z Travel Guide</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/join.html">Join in!</a>
+        </nav>
+        <!--END NAV-->
+
+        <!--TITLE AND LOGO-->
+
+        <div class="header-box">
+            <img src="./img/globe.png" class="logo">
+            <h1>World From Home</h1>
+            <h2>A new way to travel</h2>
+        </div>
+
+        <!--HEADER BOX - this probably needs changing to something more responsive, at the moment it doesn't really work with a phone/smaller device'-->
+        <div class="card-group">
+            <div class="card text-center">
+                <div class="card-body index">
+                    <img class="small-img" src="./img/see.png">
+                    <h2>See</h2>
+                    <h6 class="card-text">International films and artwork, old and new</h3>
+                </div>
+            </div>
+
+
+            <div class="card text-center">
+                <div class="card-body index">
+                    <img src="./img/hear.png" class="card-img-top small-img">
+                    <h2>Listen</h2>
+                    <h6 class="card-text">Discover new sounds, from music to podcasts</h3>
+                </div>
+            </div>
+
+
+            <div class="card text-center">
+                <div class="card-body index">
+                <img src="./img/eat.png" class="card-img-top small-img">
+                <h2>Taste</h2>
+                <h6 class="card-text">Recipes from around the globe</h3>
+            </div>
+        </div>
+
+        </div>
+
+
+        <!--SECOND NAV-->
+        <div id="second-navbar">
+            <a class="btn" href="#world-map-markers" role="button">The Map</a>
+            <a class="btn" href="./pages/page-4.html" role="button">A-Z Travel Guide</a>
+        </div>
+    </header>
+
+
+    <main>
+        <!--MAP-->
+        <div id="world-map-markers" style="width:100%;height:100%;position: absolute;"></div>
+        <script>
+            $(function () {
+                $('#world-map-markers').vectorMap({
+                    map: 'world_mill',
+                    zoomOnScroll: true,
+                    zoomButtons: true,
+                    backgroundColor: 'white',/*background*/
+                    markerStyle: {
+                        initial: {
+                            fill: 'white',
+                            stroke: '#008d8d',
+                            "fill-opacity": 1,
+                            "stroke-width": 3,
+                            r: 8.5
+                        },
+                        hover: {
+                            fill: '#00b7b7',
+                            stroke: 'white',
+                            "stroke-width": 2,
+                            cursor: 'pointer'
+                        },
+                        selected: {
+                            fill: '#006666',/*circle fill*/
+                            "stroke-width": 3,
+                            r: 10,
+                            stroke: 'white',
+                        },
+                        selectedHover: {}
+                    },
+                    regionStyle: {
+                        initial: {
+                            fill: 'orange',/*map colour*/
+                            "fill-opacity": 1,
+                            stroke: 'none',
+                            "stroke-width": 0,
+                            "stroke-opacity": 1
+                        },
+                        hover: {
+                            "fill-opacity": 1,
+                            fill: ' #0d5a5a',/*map hover colour*/
+                            cursor: 'default'
+                        }
+                    },
+
+                    labels: {
+                        markers: {
+                            render: function (code) {
+                                if (code == '0') {
+                                    return "Thailand";
+                                }
+                                if (code == '1') {
+                                    return "Brazil";
+                                }
+                                if (code == '2') {
+                                    return "Italy";
+                                }
+                                if (code == '3') {
+                                    return "Russia";
+                                }
+                                if (code == '4') {
+                                    return "Cuba";
+                                }
+                                if (code == '5') {
+                                    return "Australia";
+                                }
+                                if (code == '6') {
+                                    return "Turkey";
+                                }
+                                if (code == '7') {
+                                    return "Argentina";
+                                }
+                                if (code == '8') {
+                                    return "Poland";
+                                }
+                                if (code == '9') {
+                                    return "Angola";
+                                }
+                                if (code == '10') {
+                                    return "Japan";
+                                }
+
+                            }
+                        }
+                    },
+                    markers: [
+                        { latLng: [13.75, 100.5] },/*Thailand*/
+                        { latLng: [-22.9, -43.17] },/*Brazil*/
+                        { latLng: [41.9, 12.49] },/*Italy*/
+                        { latLng: [55.75, 37.61] },/*Russia*/
+                        { latLng: [21.52, -77.78] },/*Cuba*/
+                        { latLng: [-33.86, 151.20] },/*Australia*/
+                        { latLng: [38.96, 35.24] },/*Turkey*/
+                        { latLng: [-34.60, -58.38] },/*Argentina*/
+                        { latLng: [52.23, 21.01] },/*Poland*/
+                        { latLng: [-8.81, 13.23] },/*Angola*/
+                        { latLng: [35.67, 139.65] }],/*Japan*/
+
+                    /*WHEN MARKER IS CLICKED, GO TO COUNTRY PAGE*/
+                    onMarkerClick: function (event, code) {
+                        if (code == '0') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/thailand.html";
+                            });
+
+                        } else if (code == '1') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/brazil.html";
+                            });
+
+                        } else if (code == '2') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/italy.html";
+                            });
+
+                        } else if (code == '3') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/russia.html";
+                            });
+
+                        } else if (code == '4') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/cuba.html";
+                            });
+
+                        } else if (code == '5') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/australia.html";
+                            });
+
+                        } else if (code == '6') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/turkey.html";
+                            });
+
+                        } else if (code == '7') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/argentina.html";
+                            });
+
+                        } else if (code == '8') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/poland.html";
+                            });
+
+                        } else if (code == '9') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/angola.html";
+                            });
+
+                        } else if (code == '10') {
+                            $('#world-map-markers').on('click', function () {
+                                window.location = "pages/countries/japan.html";
+                            });
+
+                        } else {
+                            $("#markerSelected").text('');
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!--GO TO TOP BUTTON-->
+        <button class="btn btn-primary" onclick="topFunction()" id="go-top-button" title="Go to top">Top</button>
+    </main>
+</body>
+
+</html>
