@@ -1,0 +1,245 @@
+/*BACK TO TOP BUTTON*/
+
+.btn-primary {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(31, 169, 148); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-box-2 {
+    background-color: rgb(31, 169, 148);
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+
+.flex-container-2 {
+    background-color: rgb(31, 169, 148);
+    justify-content: space-around;
+    padding: 20px;
+}
+
+  .card-body {
+      background-color: yellow;
+      margin: 20px;
+      padding: 20px;
+
+  }
+
+  .card-body:hover {
+    background-color: orange; 
+  }
+
+  .card-body.index {
+    background-color: rgb(31, 169, 148); 
+  } /*header cards on index.html*/
+
+  .index:hover {
+    background-color: rgb(31, 169, 148);
+  }
+  
+  .card.text-center {
+    background-color: rgb(31, 169, 148);
+    justify-content: space-around;
+    border-style: none;
+    margin: 20px;
+  }
+  
+  .card-link {
+      font-size: 15px;
+  }
+
+.globe {
+    width: 33.33%;
+} /*logo on index page*/
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*the headings are a mess, definitely need to sort these out!*/
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+/*card title*/
+h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+  }
+
+/*card subtitle*/
+  h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+
+  }
+
+.card-link {
+    font-family: 'Raleway', sans-serif;
+}
+  
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.small-img { 
+    width: 90px;
+}
+
+/*page 3 form and subscribe*/
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 33.33%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-body.subscribe {
+    background-color: rgb(31, 169, 148);
+}
+
+.card-body.subscribe:hover {
+    background-color: orange; 
+  }
+
+button, textarea, label {
+    font-family: 'Raleway', sans-serif;
+}
+
+.disclaimer {
+    font-size: 12px;
+}
+
+/*NAV*/
+
+nav {
+    background: orange;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+	position: relative;
+	float: right;
+    margin-bottom: 1rem;
+}
+
+.hamburger:before, .hamburger:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: black;
+	position: absolute;}
+
+.hamburger:before {
+    top: 0;
+}
+
+.hamburger:after {
+    bottom: 0;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 5px;
+    display: block;
+    background: black;
+    position: absolute;
+    top: 7.5px;
+}
+
+nav.nav {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+	right: -300px;
+	transition: 0.5s all ease;
+}
+
+nav.nav.active {
+	right: 0;
+}
+
+a.cross:hover {
+    text-align: right;
+    font-size: 1.5rem;
+    background-color: orange;
+}
+
+#second-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 992px) {
+	nav.nav1 {
+		flex-direction: row;
+	}
+  }
+
+  nav a {
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav a:hover {
+        background-color: yellow;
+}
