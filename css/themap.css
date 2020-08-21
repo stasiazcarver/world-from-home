@@ -1,0 +1,23 @@
+
+svg {
+    width: 975;
+    height: 650;
+}
+
+.jvectormap-container {
+    height: 650px;
+    width: 975px;
+    margin: 30px;
+    z-index: 0;
+}
+
+.jvectormap-container {
+    height: 650px;
+    width: 975px;
+}
+
+@media (max-width: 500px) {
+    .jvectormap-container {
+        width: 480px;
+    }
+}
