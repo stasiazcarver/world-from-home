@@ -1,5 +1,4 @@
 /*BACK TO TOP BUTTON*/
-
 .btn-primary {
     display: none;
     position: fixed; /* Fixed/sticky position */
@@ -16,6 +15,13 @@
     font-size: 18px; /* Increase font size */
   }
 
+/*BACK TO THE MAP BUTTON ON COUNTRY PAGES*/
+.btn-success {
+    bottom: 20px;
+    margin: 20px;
+}
+
+  /* index page header box with logo, title and subtitle */
 .logo {
     height: 100px;
     width: 100px;
@@ -25,10 +31,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-#header-box-2 {
-    background-color: rgb(31, 169, 148);
 }
 
 .flex-container {
@@ -243,3 +245,7 @@ a.cross:hover {
 nav a:hover {
         background-color: yellow;
 }
+
+
+
+
