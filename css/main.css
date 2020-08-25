@@ -36,7 +36,6 @@
     background-color: yellow;
     font-size: 18px;
     margin: 10px;
-    border: outset;
     border-radius: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -131,9 +130,9 @@
 }
 
 .intro-container-2 {
-
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .subtitle {
