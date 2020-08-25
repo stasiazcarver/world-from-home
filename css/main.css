@@ -315,6 +315,14 @@ nav a:hover {
     padding: 20px;
 }
 
+.intro-page {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 
 
