@@ -207,7 +207,7 @@ p {
 }
 
 .small-img { 
-    width: 70px;
+    width: 90px;
 }
 
 /*page 3 form and subscribe*/
@@ -309,6 +309,10 @@ a.cross:hover {
 
 nav a:hover {
         background-color: yellow;
+}
+
+.heading-box {
+    padding: 20px;
 }
 
 
