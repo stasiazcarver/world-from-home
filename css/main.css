@@ -123,9 +123,7 @@
 
 .intro-container {
     padding: 70px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: yellow;
 }
 
@@ -133,6 +131,7 @@
     margin-top: 20px;
     margin-left: 70px;
     margin-right: 70px;
+    text-align: center;
 }
 
 .subtitle {
@@ -142,6 +141,7 @@
 .intro-text{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 /*Country titles on page-4 A-Z Guide*/
@@ -157,7 +157,7 @@ a:hover {
 
 h1 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 h2 {
