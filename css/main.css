@@ -12,6 +12,7 @@
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
+    font-family: 'Raleway', sans-serif;
     font-size: 18px; /* Increase font size */
   }
 
@@ -19,9 +20,38 @@
 .btn-success {
     bottom: 20px;
     margin: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
-  /* index page header box with logo, title and subtitle */
+
+/*NAV 2*/
+#second-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.nav-button {
+    background-color: yellow;
+    font-size: 18px;
+    margin: 10px;
+    border: outset;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: orange;
+}
+/*END OF NAV 2*/
+
+.container {
+    display: flex;
+}
+
+/* index page header box with logo, title and subtitle */
 .logo {
     height: 100px;
     width: 100px;
@@ -45,6 +75,21 @@
     padding: 20px;
 }
 
+.flex-container-3 {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+}
+
+.flex-container-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin: 10px;
+}
+
   .card-body {
       background-color: yellow;
       margin: 20px;
@@ -58,6 +103,7 @@
 
   .card-body.index {
     background-color: rgb(31, 169, 148); 
+    padding: 10px;
   } /*header cards on index.html*/
 
   .index:hover {
@@ -67,19 +113,40 @@
   .card.text-center {
     background-color: rgb(31, 169, 148);
     justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
     border-style: none;
-    margin: 20px;
+
   }
   
-  .card-link {
-      font-size: 15px;
-  }
 
-.globe {
-    width: 33.33%;
-} /*logo on index page*/
+/* Intro box on index page */
 
-a {
+.intro-container {
+    padding: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.intro-container-2 {
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.subtitle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
+}
+.intro-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+/*Country titles on page-4 A-Z Guide*/
+.country-title {
     color: black;
 }
 
@@ -104,6 +171,11 @@ h3 {
     font-weight: normal;
 }
 
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
 /*card title*/
 h5 {
     font-family: 'Abril Fatface', cursive;
@@ -120,6 +192,13 @@ h5 {
 
 .card-link {
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
 }
   
 p {
@@ -129,28 +208,21 @@ p {
 }
 
 .small-img { 
-    width: 90px;
+    width: 70px;
 }
 
 /*page 3 form and subscribe*/
-.form {
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
-    width: 33.33%;
-    margin: 10px;
-    padding: 10px;
-}
 
 .card-body.subscribe {
     background-color: rgb(31, 169, 148);
+    font-family: 'Raleway', sans-serif;
 }
 
 .card-body.subscribe:hover {
     background-color: orange; 
   }
 
-button, textarea, label {
+.card-body.form {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -220,12 +292,6 @@ a.cross:hover {
     background-color: orange;
 }
 
-#second-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: yellow;
-}
 
 @media only screen and (min-width: 992px) {
 	nav.nav1 {
